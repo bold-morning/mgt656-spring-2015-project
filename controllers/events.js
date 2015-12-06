@@ -52,11 +52,11 @@ function newEvent(request, response){
 function checkIntRange(request, fieldName, minVal, maxVal, contextData){
   var value = null;
   if (validator.isInt(request.body[fieldName]) == false) {
-    contextData.errors.push('Your' + fieldName + 'should be an integer');
+    contextData.errors.push('Your ' + fieldName + 'should be an integer');
   }else{
     value = parseInt (request.body[fieldName], 10);
     if (value > maxVal || value < minVal) {
-    contextData.errors.push('Your' + [fieldName] + 'should be between' + minVal + 'and' + maxVal);
+    contextData.errors.push('Your ' + [fieldName] + 'should be between' + minVal + 'and' + maxVal);
     }
   }
   return value;
@@ -78,7 +78,7 @@ function saveEvent(request, response){
     contextData.errors.push('Your image should be a URL.');
   }
   
-  if (validator.isLength(request.body.location, 0 [50]) === false) {
+  if (validator.isLength(request.body.location, 0, 50) === false) {
     contextData.errors.push('Your location is either empty or too long. Please correct accordingly.');
   }
   
