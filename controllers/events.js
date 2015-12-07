@@ -7,6 +7,7 @@ var validator = require('validator');
 // completing the project These data are not
 // used a first.
 //
+
 var allowedDateInfo = {
   months: {
     0: 'January',
@@ -76,6 +77,10 @@ function saveEvent(request, response){
   
   if (validator.isURL(request.body.image) === false) {
     contextData.errors.push('Your image should be a URL.');
+  }
+  
+  if (validator.matches(request.body.image, /\.(png|gif)$/) === false) {
+    contextData.errors.push('Your image should be a png or gif.');
   }
   
   if (validator.isLength(request.body.location, 1, 50) === false) {
