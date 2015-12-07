@@ -3,9 +3,9 @@
 {% block mainContent %}
 
   {% if errors %}
-    <div class="form-errors">
+    <div>
       <p>Please correct the following errors!</p>
-      <ul>
+      <ul class="form-errors">
         {% for error in errors %}
           <li>{{error}}</li>
         {% endfor %}
@@ -42,7 +42,7 @@
     <input type="text" name="minute"> 
  
  <form method="POST">
-<input type="Submit" value="Submit" action="/event-detail"/>
+<id= "submit" type="Submit" value="Submit" action="/event-detail"/>
   </form>
 {% endblock %}
 

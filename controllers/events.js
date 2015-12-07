@@ -78,7 +78,7 @@ function saveEvent(request, response){
     contextData.errors.push('Your image should be a URL.');
   }
   
-  if (validator.isLength(request.body.location, 0, 50) === false) {
+  if (validator.isLength(request.body.location, 1, 50) === false) {
     contextData.errors.push('Your location is either empty or too long. Please correct accordingly.');
   }
   
