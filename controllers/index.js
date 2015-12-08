@@ -21,7 +21,6 @@ function donate (request, response) {
 }
 
 module.exports = {
-  index: index;
+  index: index,
   donate: donate
-  
 };
