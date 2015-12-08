@@ -16,7 +16,10 @@ function index (request, response) {
 }
 
 function donate (request, response) {
-  var currentTime = new Date ();
+  var contextData = {
+    'title': 'Donate',
+    'tagline': 'Donate now!' 
+  };
   response.render('donate.html', contextData);
 }
 
