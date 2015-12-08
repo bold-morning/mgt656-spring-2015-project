@@ -15,6 +15,13 @@ function index (request, response) {
   response.render('index.html', contextData);
 }
 
+function donate (request, response) {
+  var currentTime = new Date ();
+  response.render('donate.html', contextData);
+}
+
 module.exports = {
-  index: index
+  index: index;
+  donate: donate
+  
 };
