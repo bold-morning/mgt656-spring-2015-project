@@ -1,6 +1,12 @@
+
+
 {% extends "layout.html" %}
 
+
 {% block mainContent %}
+
+
+
 <h1 id= "title" >{{event.title}} </h1>
 <br>
 <br>
@@ -40,13 +46,49 @@
 <input type="Submit" value="Submit" />
 </form>
 
+
 <br>
 <br>
 <br>
+<p style="color:#0B0B61;font-size:20px;font-weight:bold;text-align:center;"> Do you want to <a class="donation" href="/donate"> donate? </a> 
+<br>
+<<<<<<< HEAD
 <p style="color:black;font-size:20px;font-weight:bold;text-align:center;"> Want to Donate to this Event? <a class="donation" href="/donate">Click Here!</a> 
   <br>
   </p>
+=======
+</p>
+>>>>>>> e197d7faa30e8cc03f9c8dfbeaeae3c461403a81
 
 
+<!-- Load the Content Experiment JavaScript API client for the experiment -->
+<script src="//www.google-analytics.com/cx/api.js?experiment=Zd31WrZLTQCAjdjr5iGerA"></script>
+
+
+<!-- Load the JQuery library -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
+<script>
+// Define JavaScript for each page variation of this experiment.
+var pageVariations = [
+  function() {},  // Original: Do nothing. This will render the default HTML.
+  function() {    // Variation 1: add RSVP text
+    $( 'a.donation' ).html( 'support?' );
+  }
+];
+
+// Wait for the DOM to load, then execute the view for the chosen variation.
+$(document).ready(function(){
+  // Ask Google Analytics which variation to show the user.
+  var chosenVariation = cxApi.chooseVariation();
+  // Execute the chosen view
+  pageVariations[chosenVariation]();
+}
+);
+</script>
 
 {% endblock %}
+
+
+
+
