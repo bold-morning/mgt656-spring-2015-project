@@ -1,6 +1,7 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  text-align:center;  
 }
 
 a {
@@ -12,14 +13,14 @@ a {
 }
 
 .smallp {
-  color:#610B21;
-  font-size:29px;
+  color:#4682B4;
+  font-size:35px;
   font-weight:normal;
   text-align:center;  
 }
 
 .largep {
-  color: Maroon;
+  color:#4682B4;
   font-size:40px;
   font-weight:bold;
   text-align:center;
@@ -32,10 +33,38 @@ a {
     border: 25px solid navy;
     margin: 25px;
 }
-footer{
-  background-color: #eee;
+
+footer {
+  background-color: #4682B4;
   padding: 1em;
   border: 1px solid #ddd;
   margin: 2em 0;
+  text-align: left;
+ font-size:15px;
+  font-weight:bold;
+  color: white;
 }
 
+header {
+  background-color: #4682B4;
+  padding: 1em;
+  border: 1px solid #ddd;
+  margin: 2em 0;
+  text-align: left;
+  font-size:15px;
+  font-weight:bold;
+  color: white;
+  
+}
+
+h1 {
+  color: #FF8000;
+  font-size:29px;
+  font-weight:normal;
+  text-align:left; 
+}
+
+form
+{
+    text-align:left;
+}

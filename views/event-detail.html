@@ -3,14 +3,19 @@
 {% block mainContent %}
 <h1 id= "title" >{{event.title}} </h1>
 <br>
+<br>
+<br>
 <img src= {{event.image}} id="image" />
 <br>
-<p><span style="color:#0B0B61;font-size:20px;font-weight:bold;text-align:center;" id= "location"> Where: {{event.location}}  </span>
-<p><span style="color:#0B0B61;font-size:20px;font-weight:bold;text-align:center;" id= "date"> When: {{event.date}} </span>
-
+<p style="color:#4682B4;font-size:25px;font-weight:bold;text-align:center"> Time:</p><span style="color:#black;font-size:25px;font-weight:bold;text-align:center;" id= "date" > {{event.date}} </span>
+<br>
+<p style="color:#4682B4;font-size:25px;font-weight:bold;text-align:center"> Location: </p><span style="color:black;font-size:25px;font-weight:bold;text-align:center;" id= "location"> {{event.location}}  </span>
+<br>
+<br>
+<br>
 {% if event.attending.length > 0 %}
-<p style= "color:#0B0B61;font-size:20px;font-weight:bold;text-align:left;" > Attending: </p>
-    <ul style= "color:#0B0B61;font-size:20px;font-weight:bold;text-align:left;" id="attendees"> 
+<p style= "color:#4682B4;font-size:20px;font-weight:bold;text-align:left;" > Who's Attending: </p>
+    <ul style= "color:black;font-size:18px;font-weight:bold;text-align:left;" id="attendees"> 
     {% for atendee in event.attending%}
         <li>{{atendee}}</li>
     {% endfor %}
@@ -25,8 +30,11 @@
         {% endfor %}
     </ul>
   {% endif %}
-  
-  
+   <br>
+ <br>
+  <br>
+ <br>
+ <p style= "color:#4682B4;font-size:20px;font-weight:bold;text-align:left;" > Wanna Join the Fun? RSVP here: </p>
 <form method="POST">
 <input type="text" name="email" id="email" placeholder="Your Email" />
 <input type="Submit" value="Submit" />
@@ -35,7 +43,7 @@
 <br>
 <br>
 <br>
-<p style="color:#0B0B61;font-size:20px;font-weight:bold;text-align:center;"> Do you want to Donate? <a class="donation" href="/donate">Donate</a> 
+<p style="color:black;font-size:20px;font-weight:bold;text-align:center;"> Want to Donate to this Event? <a class="donation" href="/donate">Click Here!</a> 
   <br>
   </p>
 
