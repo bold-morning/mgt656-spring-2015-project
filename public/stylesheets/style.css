@@ -68,3 +68,21 @@ form
 {
     text-align:left;
 }
+
+.hyperlinks {
+  color: white;
+}
+
+.right {
+    position: absolute;
+    right: 0px;
+    width: 300px;
+    padding: 10px;
+}
+
+.left {
+    position: absolute;
+    left: 0px;
+    width: 300px;
+    padding: 10px;
+}

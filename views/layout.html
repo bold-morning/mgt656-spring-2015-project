@@ -2,9 +2,9 @@
 <html>
   <head>
     <title>{{ title }}</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+   
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css' />
-
+    <link rel='stylesheet' href='/stylesheets/style.css' />
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -27,7 +27,7 @@
 
     {% block header %}
       <header>
-        <a href="/">Home</a> &gt; <a href="/about">About Us</a>
+        <a class="hyperlinks" href="/">Home</a> &gt; <a class="hyperlinks" href="/about">About Us</a>
       </header>
     {% endblock %}
 
@@ -37,7 +37,7 @@
 
     {% block footer %}
       <footer>
-        <a href="/">Home</a> &gt; <a href="/about">About Us</a>
+        <a class="hyperlinks" href="/">Home</a> &gt; <a class="hyperlinks" href="/about">About Us</a>
         
       </footer>
     {% endblock %}

@@ -13,9 +13,26 @@
 <br>
 <img src= {{event.image}} id="image" />
 <br>
-<p style="color:#4682B4;font-size:25px;font-weight:bold;text-align:center"> Time:</p><span style="color:#black;font-size:25px;font-weight:bold;text-align:center;" id= "date" > {{event.date}} </span>
+<table style= "width:100%">
+  <tr>
+    <td>
+<p style="color:#4682B4;font-size:25px;font-weight:bold;text-align:left"> Time:</p> 
+</td>
+  <td>
+    <p style="color:#black;font-size:25px;font-weight:bold;text-align:left;" id= "date" > {{event.date}} </p>
+  </td>
+</tr>
+<tr>
+  <td>
+    <p style="color:#4682B4;font-size:25px;font-weight:bold;text-align:left"> Location: </p>
+  </td>
+  <td>
+    <p style="color:black;font-size:25px;font-weight:bold;text-align:left;" id= "location"> {{event.location}}  </p>
+  </td>
+</tr>
+</table>
 <br>
-<p style="color:#4682B4;font-size:25px;font-weight:bold;text-align:center"> Location: </p><span style="color:black;font-size:25px;font-weight:bold;text-align:center;" id= "location"> {{event.location}}  </span>
+
 <br>
 <br>
 <br>
