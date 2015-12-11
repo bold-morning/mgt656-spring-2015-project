@@ -12,35 +12,34 @@
 <br>
 <br>
 <br>
-<img src= {{event.image}} id="image" align="left" />
+    <img src= {{event.image}} id="image" align="left" />
 <br>
-<table style= "width:100%">
+  <table style= "width:100%">
   <tr>
-    <td>
+  <td>
 <br>
-<p style="color:#4682B4;font-size:20px;font-weight:bold;text-align:left"> Time:</p> 
-</td>
+    <p style="color:#4682B4;font-size:20px;font-weight:bold;text-align:left"> Time:</p> 
+  </td>
   <td>
     <span style="color:#black;font-size:25px;font-weight:bold;text-align:left;" id= "date" > {{event.date}} </span>
 
-  </td>
+</td>
 </tr>
-<tr>
+  <tr>
   <td>
     <p style="color:#4682B4;font-size:20px;font-weight:bold;text-align:left"> Location: </p>
   </td>
   <td>
     <span style="color:black;font-size:25px;font-weight:bold;text-align:left;" id= "location"> {{event.location}}  </span>
   </td>
-</tr>
-</table>
+  </tr>
+  </table>
 <br>
-
 <br>
 <br>
 <br>
 {% if event.attending.length > 0 %}
-<p style= "color:#4682B4;font-size:20px;font-weight:bold;text-align:left;" > Who's Attending: </p>
+    <p style= "color:#4682B4;font-size:20px;font-weight:bold;text-align:left;" > Who's Attending: </p>
     <ul style= "color:black;font-size:18px;font-weight:bold;text-align:left;" id="attendees"> 
     {% for atendee in event.attending%}
         <li>{{atendee}}</li>
@@ -56,31 +55,46 @@
         {% endfor %}
     </ul>
   {% endif %}
-   <br>
- <br>
-  <br>
- <br>
- <p style= "color:#4682B4;font-size:20px;font-weight:bold;text-align:left;" > Wanna Join the Fun? RSVP here: </p>
-<form method="POST">
-<input type="text" name="email" id="email" placeholder="Your Email" />
-<input type="Submit" value="Submit" />
-</form>
+<br>
+<br>
+<br>
+    <p style= "color:#4682B4;font-size:20px;font-weight:bold;text-align:left;" > Wanna Join the Fun? RSVP here: </p>
+  <form method="POST">
+    <input type="text" name="email" id="email" placeholder="Your Email" />
+    <input type="Submit" value="Submit" />
+  </form>
 
 
 <br>
 <br>
 <br>
-<p style="color:black;font-size:20px;font-weight:bold;text-align:center;"> Want to <a class="donation" href="/donate"> donate </a> to this Event? 
-  <br>
-  </p>
+    <p style="color:black;font-size:20px;font-weight:bold;text-align:center;"> Want to <a class="donation" href="/donate"> donate </a> to this Event? 
+<br>
+</p>
+
+<!-- Google Analytics Content Experiment code -->
+<script>function utmx_section(){}function utmx(){}(function(){var
+k='113066035-5',d=document,l=d.location,c=d.cookie;
+if(l.search.indexOf('utm_expid='+k)>0)return;
+function f(n){if(c){var i=c.indexOf(n+'=');if(i>-1){var j=c.
+indexOf(';',i);return escape(c.substring(i+n.length+1,j<0?c.
+length:j))}}}var x=f('__utmx'),xx=f('__utmxx'),h=l.hash;d.write(
+'<sc'+'ript src="'+'http'+(l.protocol=='https:'?'s://ssl':
+'://www')+'.google-analytics.com/ga_exp.js?'+'utmxkey='+k+
+'&utmx='+(x?x:'')+'&utmxx='+(xx?xx:'')+'&utmxtime='+new Date().
+valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
+'" type="text/javascript" charset="utf-8"><\/sc'+'ript>')})();
+</script><script>utmx('url','A/B');</script>
+<!-- End of Google Analytics Content Experiment code -->
 
 
 <!-- Load the Content Experiment JavaScript API client for the experiment -->
-<script src="//www.google-analytics.com/cx/api.js?experiment=3v0C-R23RlW4-9ci_epcJg"></script>
+<script src="//www.google-analytics.com/cx/api.js?experiment=R2iI8XNCSfG1SGiSNZ3VZw"></script>
 
 
 <!-- Load the JQuery library -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
 
 <script>
 // Define JavaScript for each page variation of this experiment.

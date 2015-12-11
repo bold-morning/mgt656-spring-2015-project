@@ -40,7 +40,7 @@ footer {
   border: 1px solid #ddd;
   margin: 2em 0;
   text-align: left;
- font-size:15px;
+  font-size:15px;
   font-weight:bold;
   color: white;
 }
@@ -66,7 +66,7 @@ h1 {
 
 form
 {
-    text-align:left;
+  text-align:left;
 }
 
 .hyperlinks {
@@ -74,15 +74,15 @@ form
 }
 
 .right {
-    position: absolute;
-    right: 0px;
-    width: 300px;
-    padding: 10px;
+  position: absolute;
+  right: 0px;
+  width: 300px;
+  padding: 10px;
 }
 
 .left {
-    position: absolute;
-    left: 0px;
-    width: 300px;
-    padding: 10px;
+  position: absolute;
+  left: 0px;
+  width: 300px;
+  padding: 10px;
 }
